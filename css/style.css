@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* Primary Colors */
+    --dark-blue: hsl(233, 47%, 7%); /* very dark blue (main background) */
+    --desaturated-blue: hsl(244, 38%, 16%); /* dark desaturated blue (card background) */
+    --soft-violet: hsl(277, 64%, 61%); /* accent */
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%); /* (main heading, stats) */
+    --main-white: hsla(0, 0%, 100%, 0.75); /* slightly transparent white (main paragraph) */
+    --stat-white: hsla(0, 0%, 100%, 0.6); /* slightly transparent white (stat heading) */
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body {
+    background-color: var(--dark-blue);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: var(--white);
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Card Section Styles */
+main .card-image img:nth-child(2) {
+    display: none;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 90%;
+    margin: 0 auto;
+}
+main .card-container {
+    background-color: var(--desaturated-blue);
+    border-radius: .5rem;
+    width: 98%;
+}
+
+/* Card Image */
+main .card-image {
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+    background-color: var(--soft-violet);
+}
+main .card-image img {
+    mix-blend-mode: multiply;
+    opacity: .7;
+}
+
+/* Card Information */
+main .card-info {
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+main .card-info .card-description {
+    margin-bottom: 2.3rem;
+}
+main .card-info .card-heading {
+    font-size: .9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+main .card-info .card-text {
+    word-spacing: 2px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+main .card-stats .card-companies-stats,
+main .card-stats .card-templates-stats,
+main .card-stats .card-queries-stats {
+    margin-bottom: 1.8rem;
+}
+main .card-info .card-stats-text {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Text Colors */
+main .card-info .card-heading h1,
+main .card-info .card-stats-figures h2 {
+    color: var(--white);
+}
+main .card-info .card-heading span {
+    color: var(--soft-violet);
+}
+main .card-info .card-text p {
+    color: var(--main-white);
+}
+main .card-info .card-stats-text p {
+    color: var(--stat-white);
+    text-transform: uppercase;
+}
+
+/* Footer Styles */
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
