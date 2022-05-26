@@ -6,61 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Stats Preview Card</title>
+  <title>Stats Preview Card Component</title>
 </head>
 <body>
-  <!-- Main Card Section -->
-  <main>
-    <div class="card-container">
-      <div class="card-image">
-        <img src="./images/image-header-mobile.jpg" alt="">
-        <img src="./images/image-header-desktop.jpg" alt="">
+  <!-- Card Section -->
+  <div class="card__container">
+    <div class="card">
+      <div class="card__img">
+        <img src="./images/image-header-mobile.jpg" alt="" class="mobile__img">
+        <img src="./images/image-header-mobile.jpg" alt="" class="desktop__img">
       </div>
-      <div class="card-info">
-        <div class="card-description">
-          <div class="card-heading">
-            <h1>Get <span>insights</span> that help your business grow.</h1>
-          </div>
-          <div class="card-text">
-            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-          </div>
+      <div class="card__details">
+        <div class="card__description">
+          <h2 class="card__heading">
+            Get <span>insights</span> that help your business grow.
+          </h2>
+          <p class="card__text">
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overalll efficiency.
+          </p>
         </div>
-        <div class="card-stats">
-          <div class="card-companies-stats">
-            <div class="card-stats-figures">
-              <h2>10k+</h2>
-            </div>
-            <div class="card-stats-text">
-              <p>Companies</p>
-            </div>
+        <div class="card__statistics">
+          <div class="company statistics">
+            <h3 class="statistics__title">10k+</h3>
+            <p class="statistics__subtitle">Companies</p>
           </div>
-          <div class="card-templates-stats">
-            <div class="card-stats-figures">
-              <h2>314</h2>
-            </div>
-            <div class="card-stats-text">
-              <p>Templates</p>
-            </div>
+          <div class="templates statistics">
+            <h3 class="statistics__title">314</h3>
+            <p class="statistics__subtitle">Templates</p>
           </div>
-          <div class="card-queries-stats">
-            <div class="card-stats-figures">
-              <h2>12M+</h2>
-            </div>
-            <div class="card-stats-text">
-              <p>Queries</p>
-            </div>
+          <div class="queries statistics">
+            <h3 class="statistics__title">12M+</h3>
+            <p class="statistics__subtitle">Queries</p>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </div>
+  
+
 
   <!-- Footer Section -->
-  <footer>
+  <footer id="footer">
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Njoroge Jeff</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Njoroge Jeff</a>
     </div>
   </footer>
+  
 </body>
 </html>
